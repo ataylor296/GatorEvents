@@ -1,0 +1,9 @@
+
+<h1>hey this the test page</h1>
+<p> {{ users }} </p>
+<ul>
+  <li *ngFor="let event of event$ | async"> {{ event.address }} </li>
+  <li> hey {{ (event2$ | async)?.datetime }} </li>
+  <li *ngFor="let user of users$ | async"> {{ user.email }} </li>
+  <li> ho {{ (user$ | async)?.email }} bii </li>
+</ul>
