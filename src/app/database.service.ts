@@ -35,7 +35,6 @@ export class DatabaseService {
 
   // GET USER. NOT WORKING
   getUserByUsername(username: string) {
-    console.log("tryna get username " + username);
     return  this.afs.collection(this.u_endpt, ref => ref.where('username', '==', username));
   }
   // TESTED
